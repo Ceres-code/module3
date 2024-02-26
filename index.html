@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Responsive Bootstrap Layout</title>
+    <style>
+        /* Custom styling for the section */
+        .custom-section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Custom styling for the navbar */
+        .navbar {
+            margin-bottom: 0; /* Remove default margin-bottom */
+        }
+
+        /* Style to remove button borders in mobile view */
+        .navbar-toggle {
+            border: none;
+        }
+
+        /* Style to change the color of the navbar toggle icon in mobile view */
+        .navbar-toggle .icon-bar {
+            background-color: #333;
+        }
+
+        /* Custom styling for the dropdown menu in mobile view */
+        .dropdown-menu {
+            width: 100%;
+            background-color: #333;
+        }
+
+        /* Custom styling for the dropdown menu items in mobile view */
+        .dropdown-menu>li>a {
+            color: #fff;
+        }
+
+        /* Custom styling for the page heading */
+        .page-heading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav visible-xs"> <!-- Visible only in mobile view -->
+                    <!-- Empty for desktop and tablet view -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs"> <!-- Hidden in mobile view -->
+                    <!-- Empty for mobile view -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+        <h1>Our Menu</h1>
+    </div>
+
+    <!-- Dropdown Menu for Mobile View -->
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Beef</a></li>
+        <li><a href="#">Sushi</a></li>
+    </ul>
+
+    <!-- Section with Bootstrap Grid -->
+    <section class="custom-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Content of the really tall section goes here -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+                    <!-- Repeat the content as needed to make the section tall -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap functionality) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
 
